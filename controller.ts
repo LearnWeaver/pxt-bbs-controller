@@ -18,17 +18,17 @@ namespace BBS_Game_Controller {
     *Controller Button Pins
     */
     export enum ControllerButtonPins {
-        //% block="Joypad Up (P8)"
+        //% block="Joypad Up"
         Up = DAL.MICROBIT_ID_IO_P16,
-        //% block="Joypad Down (P14)"
+        //% block="Joypad Down"
         Down = DAL.MICROBIT_ID_IO_P13,
-        //% block="Joypad Left (P12)"
+        //% block="Joypad Left"
         Left = DAL.MICROBIT_ID_IO_P8,
-        //% block="Joypad Right (P13)"
+        //% block="Joypad Right"
         Right = DAL.MICROBIT_ID_IO_P12,
-        //% block="Fire 1 (P15)"
+        //% block="BTN A"
         Fire1 = DAL.MICROBIT_ID_IO_P5,
-        //% block="Fire 2 (P16)"
+        //% block="BTN B"
         Fire2 = DAL.MICROBIT_ID_IO_P11
     }
 
