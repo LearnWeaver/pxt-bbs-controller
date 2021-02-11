@@ -4,7 +4,7 @@ Custom blocks for BBS Controller for micro:bit.
 See website for example code.
 
 ## Buttons
-There are two different ways to trigger events when pressing the :GAME Controller buttons.
+There are two different ways to trigger events when pressing the Controller buttons.
 
 One uses blocks which return 'True' or 'False' values - these can be inserted in 'if else' statements as shown below:
 
