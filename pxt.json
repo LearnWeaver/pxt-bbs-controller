@@ -1,7 +1,7 @@
 {
-    "name": "pxt-kitronik-game-controller",
-    "version": "0.0.2",
-    "description": "Blocks for driving the Kitronik :GAME Controller",
+    "name": "pxt-bbs-controller",
+    "version": "0.0.1",
+    "description": "Blocks for driving the BBS Controller",
     "license": "MIT",
     "dependencies": {
         "core": "*"
