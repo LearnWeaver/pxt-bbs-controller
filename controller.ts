@@ -24,11 +24,11 @@ namespace BBS_Game_Controller {
 	//% block="Forward"
 	Forward = 1,
 	//% block="Right"
-        Right = 2,
+        Right = 4,
 	//% block="Backwards"
 	Backwards = 3,
 	//% block="Left"
-	Left = 4,
+	Left = 2,
 	//% block="SpinLeft"
 	SpinLeft = 5,
 	//% block="SpinRight"
@@ -57,13 +57,13 @@ namespace BBS_Game_Controller {
     //% block
     //% group=Inputs
     export function right(): number {
-        return 2;
+        return 4;
     }
 	
     //% block
     //% group=Inputs
     export function left(): number {
-        return 4;
+        return 2;
     }
 	
     //% block
