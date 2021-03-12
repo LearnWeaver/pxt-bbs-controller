@@ -29,14 +29,14 @@ namespace BBS_Game_Controller {
 	SpinRight = 6
     }
 	
-     //% shim=ENUM_GET
-    //% blockId=color_enum_shim
-    //% block="Color $arg"
+    //% shim=ENUM_GET
+    //% blockId=direction_enum_shim
+    //% block="Direction $arg"
     //% enumName="Direction"
     //% enumMemberName="direction"
     //% enumPromptHint="e.g. Forward, Backwards, ..."
     //% enumInitialMembers="Stop, Forward, Right, Backwards, Left, SpinLeft, SpinRight"
-    export function _colorEnumShim(arg: number) {
+    export function _directionEnumShim(arg: number) {
         // This function should do nothing, but must take in a single
         // argument of type number and return a number value.
         return arg;
