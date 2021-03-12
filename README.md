@@ -3,15 +3,17 @@
 Custom blocks for BBS Controller for micro:bit. 
 See website for example code.
 
+![](https://github.com/LearnWeaver/pxt-bbs-controller/blob/master/icon.png)
+
 ## Buttons
 There are two different ways to trigger events when pressing the Controller buttons.
 
 One uses blocks which return 'True' or 'False' values - these can be inserted in 'if else' statements as shown below:
 
 ```blocks
-if (BBS.buttonIsPressed(Kitronik_Game_Controller.ControllerButtonPins.Fire1)) {
+if (BBS.buttonIsPressed(BSS_Game_Controller.ControllerButtonPins.Up)) {
     <<Event 1>>
-} else if (BBS.buttonIsPressed(Kitronik_Game_Controller.ControllerButtonPins.Fire2)) {
+} else if (BBS.buttonIsPressed(BBS_Game_Controller.ControllerButtonPins.Down)) {
     <<Event 2>>
 }
 ```
