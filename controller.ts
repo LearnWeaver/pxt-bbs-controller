@@ -13,7 +13,20 @@ namespace BBS_Game_Controller {
 	    Fire1,
 	    Fire2
 	}
+	
+      /*
+      Direction enum - useful for sending messages
+      */
 
+    export enum Directions{
+	Stop = 0,
+	Forward = 1,
+        Right = 2,
+	Left = 4,
+	Backwards = 3,
+	SpinLeft = 5,
+	SpinRight = 6
+    }
     /**
     *Controller Button Pins
     */
