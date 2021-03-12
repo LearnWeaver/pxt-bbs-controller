@@ -1,6 +1,6 @@
 
 //% weight=100 color=#00A654 icon="\uf11b" block="BBS Controller"
-//% groups='["Inputs", "Feedback"]'
+//% groups='["Inputs"]'
 namespace BBS_Game_Controller {
 	/**
 	*Controller Standard Buttons
@@ -19,48 +19,61 @@ namespace BBS_Game_Controller {
       */
 
     export enum Directions{
+	//% block="Stop"
 	Stop = 0,
+	//% block="Forward"
 	Forward = 1,
+	//% block="Right"
         Right = 2,
+	//% block="Backwards"
 	Backwards = 3,
+	//% block="Left"
 	Left = 4,
-	
+	//% block="SpinLeft"
 	SpinLeft = 5,
+	//% block="SpinRight"
 	SpinRight = 6
     }
 	
   
     //% block
+    //% group=Inputs
     export function stop(): number {
         return 0;
     }
 	
     //% block
+    //% group=Inputs
     export function forward(): number {
         return 1;
     }
 	
     //% block
+    //% group=Inputs
     export function back(): number {
         return 3;
     }
 	
     //% block
+    //% group=Inputs
     export function right(): number {
         return 2;
     }
 	
     //% block
+    //% group=Inputs
     export function left(): number {
         return 4;
     }
 	
     //% block
+    //% group=Inputs
     export function spinLeft(): number {
         return 5;
     }
 	
     //% block
+    //% group=Inputs
     export function spinRight(): number {
         return 6;
     }
