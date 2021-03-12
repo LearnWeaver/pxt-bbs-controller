@@ -22,11 +22,26 @@ namespace BBS_Game_Controller {
 	Stop = 0,
 	Forward = 1,
         Right = 2,
-	Left = 4,
 	Backwards = 3,
+	Left = 4,
+	
 	SpinLeft = 5,
 	SpinRight = 6
     }
+	
+     //% shim=ENUM_GET
+    //% blockId=color_enum_shim
+    //% block="Color $arg"
+    //% enumName="Direction"
+    //% enumMemberName="direction"
+    //% enumPromptHint="e.g. Forward, Backwards, ..."
+    //% enumInitialMembers="Stop, Forward, Right, Backwards, Left, SpinLeft, SpinRight"
+    export function _colorEnumShim(arg: number) {
+        // This function should do nothing, but must take in a single
+        // argument of type number and return a number value.
+        return arg;
+    }
+	
     /**
     *Controller Button Pins
     */
