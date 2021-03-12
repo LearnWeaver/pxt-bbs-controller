@@ -11,8 +11,7 @@
         "controller.ts",
         "shims.d.ts",
         "enums.d.ts",
-        "controller.cpp",
-        "icon.png"
+        "controller.cpp"
     ],
     "testFiles": [
         "tests.ts"
