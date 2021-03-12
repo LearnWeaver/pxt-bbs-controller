@@ -3,7 +3,7 @@
 Custom blocks for BBS Controller for micro:bit. 
 See website for example code.
 
-![](https://github.com/LearnWeaver/pxt-bbs-controller/blob/master/icon.png)
+![](https://raw.githubusercontent.com/LearnWeaver/pxt-bbs-controller/main/icon.png)
 
 ## Buttons
 There are two different ways to trigger events when pressing the Controller buttons.
