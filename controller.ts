@@ -146,7 +146,7 @@ namespace BBS_Game_Controller {
     }
 	
     //% group=Inputs
-    //% blockId="bbs_controller_button_press_off_event" block="on any button release %event"
+    //% blockId="bbs_controller_button_press_off_event" block="on any button release"
     //% weight=93 blockGap=8
     export function onButtonRelease(handler: Action) {
         init();
