@@ -107,15 +107,24 @@ namespace BBS_Game_Controller {
         //% block="click"
         Click = DAL.MICROBIT_BUTTON_EVT_CLICK
     }
-
+    let initialized = false;
     /**
      *
      */
     //% shim=BBS_Game_Controller::init
     function init(): void {
-        return;
+        if (initialized) return;
+        pins.pushButton(DigitalPin.P11)
+        pins.pushButton(DigitalPin.P12)
+        pins.pushButton(DigitalPin.P13)
+        pins.pushButton(DigitalPin.P16)
+        pins.pushButton(DigitalPin.P8)
+        pins.pushButton(DigitalPin.P5)
+        initialized = true;
     }
 
+
+    
 
     /**
      * Determines if a Controller button is pressed
@@ -151,10 +160,10 @@ namespace BBS_Game_Controller {
     export function onButtonRelease(handler: Action) {
         init();
         control.onEvent(ControllerButtonPins.Up, ControllerButtonEvents.Up, handler);
-	control.onEvent(ControllerButtonPins.Down, ControllerButtonEvents.Up, handler);
-	control.onEvent(ControllerButtonPins.Left, ControllerButtonEvents.Up, handler);
-	control.onEvent(ControllerButtonPins.Right, ControllerButtonEvents.Up, handler);
-	control.onEvent(ControllerButtonPins.Fire1, ControllerButtonEvents.Up, handler);
-	control.onEvent(ControllerButtonPins.Fire2, ControllerButtonEvents.Up, handler);
+        control.onEvent(ControllerButtonPins.Down, ControllerButtonEvents.Up, handler);
+        control.onEvent(ControllerButtonPins.Left, ControllerButtonEvents.Up, handler);
+        control.onEvent(ControllerButtonPins.Right, ControllerButtonEvents.Up, handler);
+        control.onEvent(ControllerButtonPins.Fire1, ControllerButtonEvents.Up, handler);
+        control.onEvent(ControllerButtonPins.Fire2, ControllerButtonEvents.Up, handler);
     }
 } 

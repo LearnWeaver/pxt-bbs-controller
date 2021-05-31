@@ -1,6 +1,6 @@
 {
     "name": "pxt-bbs-controller",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Blocks for driving the BBS Controller",
     "license": "MIT",
     "dependencies": {
@@ -10,8 +10,7 @@
         "README.md",
         "controller.ts",
         "shims.d.ts",
-        "enums.d.ts",
-        "controller.cpp"
+        "enums.d.ts"
     ],
     "testFiles": [
         "tests.ts"
