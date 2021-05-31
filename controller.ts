@@ -108,10 +108,7 @@ namespace BBS_Game_Controller {
         Click = DAL.MICROBIT_BUTTON_EVT_CLICK
     }
     let initialized = false;
-    /**
-     *
-     */
-    //% shim=BBS_Game_Controller::init
+    
     function init(): void {
         if (initialized) return;
         pins.pushButton(DigitalPin.P11)
